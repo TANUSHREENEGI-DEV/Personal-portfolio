@@ -1,0 +1,270 @@
+/* ===== RESET & BASE ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f0f0f0;
+  color: #2d2d2d;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+/* ===== RESUME WRAPPER ===== */
+main.resume {
+  background: #ffffff;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+/* ===== HEADER ===== */
+header.resume-header {
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+header.resume-header hgroup h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1B3A6B;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+header.resume-header hgroup .headline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #E87722;
+  margin-top: 0.3rem;
+}
+
+address.contact-bar {
+  font-style: normal;
+  margin-top: 0.75rem;
+}
+
+address.contact-bar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 2rem;
+}
+
+address.contact-bar ul li {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+address.contact-bar ul li a {
+  color: #444;
+}
+
+address.contact-bar ul li a:hover {
+  color: #1B3A6B;
+}
+
+/* ===== SECTIONS ===== */
+section.resume-section {
+  margin-bottom: 1.8rem;
+}
+
+section.resume-section h2 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #1B3A6B;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 2px solid #1B3A6B;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== SUMMARY ===== */
+#summary p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* ===== ROLE / EXPERIENCE / PROJECTS ===== */
+article.role {
+  display: grid;
+  grid-template-columns: 155px 1fr;
+  gap: 0.5rem 1.2rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+article.role::before {
+  content: '•';
+  position: absolute;
+  left: 148px;
+  top: 0.15rem;
+  color: #1B3A6B;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+aside.role-meta {
+  text-align: right;
+  padding-top: 0.1rem;
+}
+
+aside.role-meta time {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1B3A6B;
+}
+
+aside.role-meta p {
+  font-size: 0.78rem;
+  color: #777;
+  margin-top: 0.15rem;
+}
+
+section.role-content h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 0.1rem;
+}
+
+strong.company {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #E87722;
+  margin-bottom: 0.4rem;
+}
+
+strong.company a {
+  color: #E87722;
+}
+
+section.role-content ul {
+  margin-top: 0.3rem;
+}
+
+section.role-content ul li {
+  font-size: 0.85rem;
+  color: #444;
+  margin-bottom: 0.25rem;
+  line-height: 1.55;
+}
+
+/* ===== SKILLS ===== */
+ul.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+ul.skills-list li {
+  background: #f0f4ff;
+  color: #1B3A6B;
+  border: 1px solid #c5d3f0;
+  padding: 0.3rem 0.85rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+/* ===== ACHIEVEMENTS ===== */
+ul.achievements-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+article.achievement-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+}
+
+article.achievement-card h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1B3A6B;
+  margin-bottom: 0.4rem;
+}
+
+article.achievement-card p {
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.55;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 650px) {
+  main.resume {
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  header.resume-header hgroup h1 {
+    font-size: 1.6rem;
+  }
+
+  address.contact-bar ul {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  article.role {
+    grid-template-columns: 1fr;
+  }
+
+  article.role::before {
+    display: none;
+  }
+
+  aside.role-meta {
+    text-align: left;
+  }
+
+  ul.achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  main.resume {
+    box-shadow: none;
+    margin: 0;
+    padding: 1.5rem;
+  }
+}
