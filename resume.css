@@ -122,8 +122,10 @@ article.role {
 article.role::before {
   content: '•';
   position: absolute;
-  left: 148px;
+  left: 155px;
   top: 0.15rem;
+  width: 1.2rem;
+  text-align: center;
   color: #1B3A6B;
   font-size: 1.2rem;
   line-height: 1;
